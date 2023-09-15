@@ -1,6 +1,6 @@
 # Estrutura da IA
 
-## Passo 1: Preparar seus dados
+## Passo 1: Preparar os dados
 - Obter dados rotulados: Você precisa de um conjunto de dados que contenha comentários e rótulos que indiquem se cada comentário é tóxico ou não. Você pode encontrar conjuntos de dados públicos em sites como Kaggle ou criar seu próprio conjunto de dados rotulando manualmente os comentários.
 
 ## Passo 2: Pré-processar os comentários
@@ -23,5 +23,3 @@
 
 ## Passo 6: Implementar em produção
 - Uma vez que você tenha um modelo treinado que esteja funcionando bem, você pode implementá-lo em um aplicativo ou serviço real para classificar automaticamente comentários tóxicos.
-
-Lembre-se de que este é um exemplo básico de como construir um classificador de comentários tóxicos. Em problemas do mundo real, você pode precisar lidar com desafios adicionais, como desequilíbrio de classes, lidar com texto multilíngue, e assim por diante. Além disso, considerar o uso de modelos de linguagem pré-treinados, como BERT ou GPT, pode melhorar significativamente o desempenho do seu classificador.
