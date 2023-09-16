@@ -1,12 +1,12 @@
 # Documento de Requisitos
 
 ## Introdução
-
-Este documento descreve os requisitos do sistema para [Nome do Sistema]. Ele fornece uma visão geral do produto, termos técnicos específicos, abreviações, envolvidos, usuários, requisitos funcionais, requisitos não funcionais e regras de negócio.
+Este documento descreve os requisitos do sistema para Classificação de comentários. Ele fornece uma visão geral do produto, termos técnicos específicos, abreviações, envolvidos, usuários, requisitos funcionais, requisitos não funcionais e regras de negócio.
 
 ## Visão Geral do Produto
+As redes sociais permitem a interação entre muitas pessoas e influenciadores digitais, nos mais variados temas. Contribuindo em muitos casos para informação sobre doenças, melhor maneira de realizar alguma tarefa, diversão, etc. Existem alguns usuários, que não concordam as ideias e pontos de vista de outros usuários, e realizam comentários ofensivos e preconceituosos contra usuários com ideias diferentes das suas, disseminando ódio e ofendendo. Como existem muitos comentários nas redes sociais, é humanamente muito difícil analisar todos os comentários nas redes sociais. Dessa forma, uma maneira automatizada de classificar e identificar os comentários ofensivos nas redes sociais é importante para aplicação das punições cabíveis, além de encontrar contas falsas empregadas unicamente para comentários ofensivos.
 
-[Descreva brevemente o produto ou sistema que será desenvolvido. Inclua informações sobre seu propósito e contexto de uso.]
+A equipe envolvida no projeto praticará o desenvolvimento de interface com boa usabilidade e prototipação de software. A fim de organizar o desenvolvimento é importante antes definir os requisitos, arquitetura e como testar o software. Portanto, a criação de documentação adequada que aborde tais aspectos contribuirão na implementação. O treinamento da Inteligência Artificial (IA) para classificação dos comentários em redes sociais, empregará vários conceitos observados na disciplina de IA.
 
 ## Termos Técnicos
 
@@ -38,27 +38,12 @@ Este documento descreve os requisitos do sistema para [Nome do Sistema]. Ele for
 
 ### Requisitos Funcionais
 
-1. **[RF001]:** [Descrição do requisito funcional 1]
-   - **Caso de Uso Associado:** [Nome do Caso de Uso]
-
-2. **[RF002]:** [Descrição do requisito funcional 2]
-   - **Caso de Uso Associado:** [Nome do Caso de Uso]
-
-[Continue listando todos os requisitos funcionais]
 
 ### Requisitos Não Funcionais
 
-1. **[RNF001]:** [Descrição do requisito não funcional 1]
-2. **[RNF002]:** [Descrição do requisito não funcional 2]
-
-[Continue listando todos os requisitos não funcionais]
 
 ### Regras de Negócio
 
-1. **[RN001]:** [Descrição da regra de negócio 1]
-2. **[RN002]:** [Descrição da regra de negócio 2]
-
-[Continue listando todas as regras de negócio]
 
 ## Caso de Uso
 
@@ -85,17 +70,3 @@ Este documento descreve os requisitos do sistema para [Nome do Sistema]. Ele for
 **Pós-condições:** [Condições que devem ser verdadeiras após a conclusão do caso de uso]
 
 **Exceções:** [Descrição de exceções e como lidar com elas]
-
-## Anexos
-
-### Protótipos
-
-- Inclua aqui protótipos de interface de usuário, fluxos de usuário ou quaisquer outras representações visuais do sistema.
-
-### Arquitetura
-
-- Forneça informações detalhadas sobre a arquitetura do sistema, incluindo diagramas, componentes-chave e integrações.
-
-### Documentos Auxiliares
-
-- Liste qualquer documento adicional relacionado aos requisitos, como manuais de usuário, guias técnicos ou especificações de API.
