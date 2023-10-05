@@ -2,6 +2,14 @@
 
 ## Arquitetura Cliente-Servidor
 
+A arquitetura cliente-servidor é um modelo de design de software em que os clientes (usuários ou dispositivos) fazem solicitações a um servidor central, que fornece serviços ou recursos em resposta. É uma abordagem distribuída em que a lógica do sistema é dividida entre clientes e servidores, permitindo a escalabilidade e a colaboração entre componentes.
+
+Essa arquitetura é uma escolha sólida para projetos que envolvem interações entre usuários, processamento centralizado e monitoramento de conteúdo. Além disso, oferece vantagens de extrema importância para o sistema como **Distribuição de Responsabilidades:**, **Controle Centralizado:**, **Gerenciamento de Dados:**, **Notificação em Tempo Real:**, além Facilidade na Manutenção, Segurança e Privacidade.
+
+### Diagrama
+
+![diagrama]([caminho/para/a/imagem.jpg](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documentos/Modelo%20Arquitetural/cliente-servidor-diagrama.png))
+
 ### Componentes
 **Usuários:** Interagem com a plataforma de redes sociais. Eles podem criar e visualizar postagens, bem como fazer comentários.
 
