@@ -2,7 +2,7 @@
 
 Este produto é uma solução de software projetada para melhorar a moderação de conteúdo em redes sociais. À medida que as redes sociais se tornam um espaço importante para interação e compartilhamento de informações, também surgem desafios relacionados a comentários ofensivos e prejudiciais. O objetivo deste software é utilizar a inteligência artificial (IA) para identificar automaticamente esses comentários problemáticos e classificá-los com base em sua gravidade.
 
-## Documentos:
+## Documentação básica e descrição do projeto:
 
 ### [Descrição da Temática](https://github.com/SauloCav/Projeto-Integrador-IV/blob/37d6c39072739710799db701d9d541b52e6e3dd2/Documentos/Classificador%20de%20coment%C3%A1rios%20docs/tematica.md)
 
@@ -18,6 +18,8 @@ Este produto é uma solução de software projetada para melhorar a moderação 
 
 ### [Estrutura](https://github.com/SauloCav/Projeto-Integrador-IV/blob/37d6c39072739710799db701d9d541b52e6e3dd2/Documentos/Classificador%20de%20coment%C3%A1rios%20docs/estrutura.md)
 
+## Documentação do projeto:
+
 ### [Requisitos](https://github.com/SauloCav/Projeto-Integrador-IV/blob/37d6c39072739710799db701d9d541b52e6e3dd2/Documentos/Requisitos/requisitos.md)
 
-### [Modelo Arquitetural](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documentos/Modelo%20Arquitetural/modeloArquitetural.md)
+### [Modelo arquitetural](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documentos/Modelo%20Arquitetural/modeloArquitetural.md)
