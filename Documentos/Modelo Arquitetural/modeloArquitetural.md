@@ -29,6 +29,3 @@ Essa arquitetura é uma escolha sólida para projetos que envolvem interações 
 * O servidor de aplicação notifica os moderadores sobre os comentários ofensivos detectados.
 * Os moderadores acessam a interface de moderadores para revisar e tomar ações sobre os comentários ofensivos.
 * As ações tomadas pelos moderadores são registradas no banco de dados.
-
-
-#### .
