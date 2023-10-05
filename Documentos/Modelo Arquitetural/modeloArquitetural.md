@@ -4,9 +4,13 @@
 
 ### Componentes
 **Usuários:** Interagem com a plataforma de redes sociais. Eles podem criar e visualizar postagens, bem como fazer comentários.
+
 **Servidor:** Núcleo do seu sistema. Responsável pela lógica de negócios, incluindo a coleta de comentários, a classificação de comentários ofensivos por meio de IA, a notificação de moderadores e a ação sobre comentários ofensivos.
+
 **Banco de Dados** O servidor deve se comunicar com um banco de dados para armazenar informações sobre comentários, usuários e ações tomadas pelos moderadores. Isso é crucial para manter um registro de atividades e permitir a análise de dados.
+
 **Inteligência Artificial(IA):** Este componente envolve a implementação de modelos de aprendizado de máquina e processamento de linguagem natural (NLP) para a detecção de comentários ofensivos. Os modelos de IA são treinados com base em dados de treinamento etiquetados.
+
 **Interface de Moderadores:** Uma interface de usuário dedicada para moderadores onde eles podem revisar os comentários detectados como ofensivos, tomar medidas (excluir ou banir) e atualizar as classificações, se necessário.
 
 ### Fluxo de Funcionamento
