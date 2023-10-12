@@ -8,7 +8,7 @@ Essa arquitetura é uma escolha sólida para projetos que envolvem interações 
 
 ### Diagrama
 
-![diagrama](/home/saulocav/Projeto-Integrador-IV/Documentação/img/cliente-servidor-diagrama.png)
+![diagrama](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documenta%C3%A7%C3%A3o/img/cliente-servidor-diagrama.png)
 
 ### Componentes
 **Usuários:** Interagem com a plataforma de redes sociais. Eles podem criar e visualizar postagens, bem como fazer comentários.
