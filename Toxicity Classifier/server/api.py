@@ -7,9 +7,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app) 
 
-model = load_model('../ia/models/my_toxic_model.h5')
+model = load_model('../ai/models/my_toxic_model.h5')
 
-loaded_vectorizer_model = tf.saved_model.load('../ia/models/my_vectorizer')
+loaded_vectorizer_model = tf.saved_model.load('../ai/models/my_vectorizer')
 
 def vectorize_text(text):
     return loaded_vectorizer_model([text])
