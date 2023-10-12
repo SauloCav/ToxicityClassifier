@@ -11,8 +11,7 @@ const App: React.FC = () => {
 
   const handleSubmit = async () => {
     try {
-      // Replace with your actual API endpoint
-      const response = await axios.post('http://localhost:5000/predict', { text });
+      const response = await axios.post(import.meta.env.VITE_REACT_APP_URL_API, { text });
       setPrediction(response.data.prediction);
     } catch (error) {
       console.error('Error fetching data: ', error);
