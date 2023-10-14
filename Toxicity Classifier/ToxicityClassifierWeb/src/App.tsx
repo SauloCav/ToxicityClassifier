@@ -1,43 +1,49 @@
 import React, { useState } from 'react';
 import './App.css';
 
-function App() {
-  const [inputText, setInputText] = useState('');
-  const [predictions, setPredictions] = useState<any>(null);
-  const [loading, setLoading] = useState(false);
+const App: React.FC = () => {
+  const [url, setUrl] = useState<string>('');
+  const [comments, setComments] = useState<any[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-    setInputText(event.target.value);
-  };
-
-  const handleSubmit = async () => {
-    // Split the input text by new lines and filter out any empty lines
-    const texts = inputText.split('\n').filter(text => text.length > 0);
-
-    if (texts.length === 0) {
-      alert('Please enter at least one line of text.');
-      return;
-    }
-
-    setLoading(true);
-
+  const fetchComments = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/predict', {
+      setLoading(true);
+      const response = await fetch(import.meta.env.VITE_REACT_APP_URL_API_COMMENTS, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ texts }), // send the texts list to the API
+        body: JSON.stringify({ url }),
       });
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+      const data = await response.json();
+
+      if (data.error) {
+        throw new Error(data.error);
       }
 
-      const data = await response.json();
-      setPredictions(data.predictions); // store the predictions in state
+      // Assuming each comment is a string. Adjust if your API returns a different structure.
+      const texts = data.map((comment: any) => comment.comment); 
+
+      const toxicityResponse = await fetch(import.meta.env.VITE_REACT_APP_URL_API_AI, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ texts }),
+      });
+
+      const toxicityData = await toxicityResponse.json();
+
+      if (toxicityData.error) {
+        throw new Error(toxicityData.error);
+      }
+
+      setComments(toxicityData.predictions);  // Assuming this returns a list of objects {text, prediction}
     } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
+      console.error("An error occurred", error);
+      // Handle/display error to the user
     } finally {
       setLoading(false);
     }
@@ -45,31 +51,27 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Toxicity Predictor</h1>
-        <textarea
-          value={inputText}
-          onChange={handleTextChange}
-          placeholder="Enter text (one per line)"
-          rows={10}
-          style={{ width: '100%', marginBottom: '12px' }}
-        />
-        <button onClick={handleSubmit} disabled={loading}>
-          {loading ? 'Loading...' : 'Predict Toxicity'}
-        </button>
-        {predictions && (
-          <div>
-            <h2>Predictions:</h2>
-            <ul>
-              {predictions.map((result: any, index: number) => (
-                <li key={index}>
-                  Text: {result.text} | Prediction: {result.prediction[0].join(', ')}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-      </header>
+      <input
+        type="text"
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        placeholder="Enter Reddit post URL"
+      />
+      <button onClick={fetchComments} disabled={loading}>
+        {loading ? "Loading..." : "Get Comments and Analyze Toxicity"}
+      </button>
+
+      {comments.length > 0 && (
+        <div>
+          {comments.map((item, index) => (
+            <div key={index}>
+              <p>{item.text}</p>
+              {item.prediction}
+              <p>Is Toxic: {item.prediction[0] > 0.5 ? "Yes" : "No"}</p> {/* Adjust based on how your model returns predictions */}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
