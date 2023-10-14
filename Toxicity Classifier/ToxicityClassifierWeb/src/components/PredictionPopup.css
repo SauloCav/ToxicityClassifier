@@ -1,0 +1,61 @@
+/* PredictionPopup.css */
+.popup-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background */
+    z-index: 1000; /* Ensure this lays over other content */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .popup-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup-content {
+    background: #ff4949;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); /* Shadow for 3D effect */
+    width: 70%; /* Adjust the width as needed */
+    max-width: 400px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.9);
+  }
+  
+  .popup-backdrop.open .popup-content {
+    transform: scale(1);
+  }
+  
+  .popup-header {
+    margin-bottom: 10px;
+  }
+  
+  .popup-close-button {
+    background-color: #ff6262; /* A red color for the button, use any color you prefer */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Larger hit area */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-close-button:hover,
+  .popup-close-button:active {
+    background-color: #ff4949; /* Darker red when hovered over, use any color you prefer */
+  }
+  
+  .popup-predictions {
+    margin-top: 20px;
+    
+  }
+  
