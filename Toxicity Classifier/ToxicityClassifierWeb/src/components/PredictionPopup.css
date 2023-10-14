@@ -21,9 +21,10 @@
   }
   
   .popup-content {
-    background: #ff4949;
+    background: rgb(255, 255, 255);
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
+    border: solid rgb(0, 0, 0);;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); /* Shadow for 3D effect */
     width: 70%; /* Adjust the width as needed */
     max-width: 400px;
@@ -41,12 +42,14 @@
   
   .popup-close-button {
     background-color: #ff6262; /* A red color for the button, use any color you prefer */
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     padding: 10px 20px; /* Larger hit area */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   .popup-close-button:hover,
@@ -56,6 +59,9 @@
   
   .popup-predictions {
     margin-top: 20px;
-    
+  }
+
+  .popup-text {
+    color: rgb(0, 0, 0);
   }
   

@@ -1,0 +1,17 @@
+/* URLInput.css */
+.url-input {
+    width: 1000px;
+    padding: 10px 15px;
+    margin-bottom: 20px; /* Espaço abaixo do input */
+    border-radius: 5px; /* Cantos arredondados */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center;
+  }
+  
+  .url-input:focus {
+    border-color: #2e9b34; /* Cor da borda quando focado */
+    box-shadow: 0 0 10px #6aee7b; /* Sombra externa para destacar */
+    text-align: center;
+  }
+  

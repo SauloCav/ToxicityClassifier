@@ -1,5 +1,6 @@
 // Comment.tsx
 import React, { useState } from 'react';
+import './Comment.css'; // <- Certifique-se de importar o arquivo de estilos
 import PredictionPopup from './PredictionPopup';
 
 interface CommentProps {
@@ -18,16 +19,22 @@ const Comment: React.FC<CommentProps> = ({ text, prediction }) => {
     setShowPopup(false);
   };
 
+  const predictions = prediction.toString().split(',');
+  const isOffensive = Number(predictions[0]) > 0.5;
+
   return (
-    <div>
-      <p>{text}</p>
-      {prediction}
-      <p>Is Toxic: {prediction[0] > 0.5 ? "Yes" : "No"}</p>
-      <button onClick={handleShowPopup}>Show Predictions</button>
+    <div className="comment-section">
+      <p className="comment-text">{text}</p>
+      <p className="offensive-indicator">Trata-se de um comentário ofensivo: 
+        <span className={isOffensive ? 'yes-text' : 'no-text'}>
+          {isOffensive ? " Sim" : " Não"}
+        </span>
+      </p>
+      <button className="show-predictions-button" onClick={handleShowPopup}>Detalhes</button>
       <PredictionPopup 
         show={showPopup} 
         onClose={handleClosePopup} 
-        predictions={prediction} 
+        predictions={predictions} 
       />
     </div>
   );

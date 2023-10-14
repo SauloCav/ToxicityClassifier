@@ -1,0 +1,49 @@
+/* Comment.css */
+.comment-section {
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 0px;
+    margin-bottom: 30px;
+    background-color: #f4f4f4;
+  }
+  
+  .comment-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .offensive-indicator {
+    font-weight: bold;
+    color: #333; /* red color for offensive content indicator */
+  }
+  
+  .show-predictions-button {
+    background-color: #000000; /* a blue shade */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .show-predictions-button:hover {
+    background-color: #0056b3; /* a darker blue on hover */
+  }
+
+  /* Comment.css */
+/* ... (outras regras CSS) ... */
+
+.yes-text {
+    color: #d9534f; /* cor vermelha para 'Sim' */
+  }
+  
+  .no-text {
+    color: #28a745; /* cor verde para 'Não' */
+  }
+  
+  
+  /* If you're using the PredictionPopup component, you may want to add some styles for it in the respective CSS file. */
+  
