@@ -1,29 +1,40 @@
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 import tensorflow as tf
-import numpy as np
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app) 
+CORS(app)
 
-model = load_model('../ai/models/my_toxic_model.h5')
-
-loaded_vectorizer_model = tf.saved_model.load('../ai/models/my_vectorizer')
+model = load_model('../models/my_toxic_model.h5')
+loaded_vectorizer_model = tf.saved_model.load('../models/my_vectorizer')
 
 def vectorize_text(text):
     return loaded_vectorizer_model([text])
 
 @app.route('/predict', methods=['POST'])
 def predict():
-
     data = request.json
-    text = data['text']
+    texts = data.get('texts', [])  # expects a key 'texts' with a list of strings as the value
 
-    input_text = vectorize_text(text)
-    predictions = model.predict(input_text)
+    # Check if texts is a list
+    if not isinstance(texts, list):
+        return jsonify({'error': 'Input data should be a list of strings'}), 400
 
-    return jsonify({'prediction': predictions.tolist()})
+    response_data = {'predictions': []}
+
+    for text in texts:
+        # Vectorize the current text
+        input_text = vectorize_text(text)
+        # Make prediction
+        prediction = model.predict(input_text)
+        # Append the prediction to our response
+        response_data['predictions'].append({
+            'text': text,
+            'prediction': prediction.tolist()
+        })
+
+    return jsonify(response_data)
 
 if __name__ == '__main__':
     app.run(debug=True)
