@@ -4,6 +4,7 @@ import './App.css';
 import CommentList from './components/CommentList';
 import URLInput from './components/URLInput';
 import FetchButton from './components/FetchButton';
+import background from './assets/videos/background.mp4'
 
 const App: React.FC = () => {
   const [url, setUrl] = useState<string>('');
@@ -55,16 +56,23 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <URLInput 
-        value={url} 
-        onChange={(e) => setUrl(e.target.value)} 
-      />
-      <FetchButton 
-        onClick={fetchComments} 
-        loading={loading} 
-      />
+      <video autoPlay loop muted className="video-background">
+        <source src={background} type="video/mp4" />
+      </video>
 
-      {comments.length > 0 && <CommentList comments={comments} />}
+      <div className="App">
+        <div className="input-section">
+          <URLInput 
+            value={url} 
+            onChange={(e) => setUrl(e.target.value)} 
+          />
+          <FetchButton 
+            onClick={fetchComments} 
+            loading={loading} 
+          />
+          {comments.length > 0 && <CommentList comments={comments} />}
+        </div>
+      </div>
     </div>
   );
 }

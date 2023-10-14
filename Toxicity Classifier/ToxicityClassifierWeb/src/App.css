@@ -62,3 +62,33 @@
   width: 100%;
 }
 
+/* App.css */
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+  z-index: -1000;
+  background: transparent;
+  object-fit: cover; /* ou 'contain' se preferir ver todo o vídeo */
+  object-position: center;
+}
+
+/* App.css */
+.App {
+  display: flex;
+  justify-content: center; /* Centraliza os itens na direção horizontal */
+  align-items: center; /* Centraliza os itens na direção vertical */
+  background-color: transparent; /* ou qualquer cor que você preferir */
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column; /* Mantém os filhos empilhados verticalmente */
+  align-items: center; /* Alinha os itens ao centro na direção horizontal */
+  gap: 10px; /* Espaço opcional entre os itens */
+}
+
+
+
