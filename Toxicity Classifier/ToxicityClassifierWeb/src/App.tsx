@@ -1,5 +1,9 @@
+// App.tsx
 import React, { useState } from 'react';
 import './App.css';
+import CommentList from './components/CommentList';
+import URLInput from './components/URLInput';
+import FetchButton from './components/FetchButton';
 
 const App: React.FC = () => {
   const [url, setUrl] = useState<string>('');
@@ -51,27 +55,16 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <input
-        type="text"
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
-        placeholder="Enter Reddit post URL"
+      <URLInput 
+        value={url} 
+        onChange={(e) => setUrl(e.target.value)} 
       />
-      <button onClick={fetchComments} disabled={loading}>
-        {loading ? "Loading..." : "Get Comments and Analyze Toxicity"}
-      </button>
+      <FetchButton 
+        onClick={fetchComments} 
+        loading={loading} 
+      />
 
-      {comments.length > 0 && (
-        <div>
-          {comments.map((item, index) => (
-            <div key={index}>
-              <p>{item.text}</p>
-              {item.prediction}
-              <p>Is Toxic: {item.prediction[0] > 0.5 ? "Yes" : "No"}</p> {/* Adjust based on how your model returns predictions */}
-            </div>
-          ))}
-        </div>
-      )}
+      {comments.length > 0 && <CommentList comments={comments} />}
     </div>
   );
 }
