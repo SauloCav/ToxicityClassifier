@@ -1,3 +1,5 @@
+# Plano de testes
+
 **1. Introdução:**
    - **Objetivo:** Garantir que o aplicativo "Classificador de Comentários" identifique e classifique precisamente comentários tóxicos, mantenha alto desempenho e usabilidade, e integre-se perfeitamente entre a interface do usuário e o modelo de IA.
    - **Escopo:** Abrange o aplicativo web, o modelo de IA, scripts do lado do servidor e sua integração.
