@@ -25,9 +25,9 @@ const Comment: React.FC<CommentProps> = ({ text, prediction }) => {
   return (
     <div className="comment-section">
       <p className="comment-text">{text}</p>
-      <p className="offensive-indicator">Trata-se de um comentário ofensivo: 
+      <p className="offensive-indicator">
         <span className={isOffensive ? 'yes-text' : 'no-text'}>
-          {isOffensive ? " Sim" : " Não"}
+          {isOffensive ? "Trata-se de um comentário ofensivo" : "Não trata-se de um comentário ofensivo"}
         </span>
       </p>
       <button className="show-predictions-button" onClick={handleShowPopup}>Detalhes</button>
