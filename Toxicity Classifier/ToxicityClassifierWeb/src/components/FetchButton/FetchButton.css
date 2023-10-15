@@ -1,0 +1,24 @@
+.fetch-button {
+  background-color: rgb(6, 82, 12);
+  color: white; 
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 30px;
+  border: solid rgb(0, 0, 0);
+}
+
+.fetch-button:hover {
+  background-color: #25a837;
+  border: solid rgb(6, 82, 12);
+}
+
+.fetch-button:disabled {
+  background-color: #2f4731;
+  color: #1b8636;
+  cursor: not-allowed;
+}
+  

@@ -1,6 +1,5 @@
-// CommentList.tsx
 import React from 'react';
-import Comment from './Comment';
+import Comment from '../Comment/Comment';
 
 interface CommentListProps {
   comments: any[];

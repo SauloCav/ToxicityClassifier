@@ -41,7 +41,6 @@
   color: #888;
 }
 
-/* App.css or PredictionPopup.css */
 .popup-backdrop {
   position: fixed;
   top: 0;
@@ -62,7 +61,6 @@
   width: 100%;
 }
 
-/* App.css */
 .video-background {
   position: fixed;
   right: 0;
@@ -71,24 +69,20 @@
   height: 100%;
   z-index: -1000;
   background: transparent;
-  object-fit: cover; /* ou 'contain' se preferir ver todo o vídeo */
+  object-fit: cover;
   object-position: center;
 }
 
-/* App.css */
 .App {
   display: flex;
-  justify-content: center; /* Centraliza os itens na direção horizontal */
-  align-items: center; /* Centraliza os itens na direção vertical */
-  background-color: transparent; /* ou qualquer cor que você preferir */
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }
 
 .input-section {
   display: flex;
-  flex-direction: column; /* Mantém os filhos empilhados verticalmente */
-  align-items: center; /* Alinha os itens ao centro na direção horizontal */
-  gap: 10px; /* Espaço opcional entre os itens */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
-
-
-

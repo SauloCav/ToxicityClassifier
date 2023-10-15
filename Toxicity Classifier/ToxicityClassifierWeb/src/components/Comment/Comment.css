@@ -1,0 +1,57 @@
+.comment-section {
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+  
+.comment-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #5ebe76; 
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+  
+.offensive-indicator {
+  font-weight: 800;
+  font-size: 20px;
+  color: #333;
+}
+
+.show-predictions-button {
+  background-color: #2a4729;
+  color: #ffffff;
+  border: 1px solid #5ebe76;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+  
+.show-predictions-button:hover {
+  background-color: #0056b3;
+}
+
+.yes-text {
+  color: #d9534f;
+  font-weight: 1400;
+}
+
+.no-text {
+  color: #28a745;
+  font-weight: 1400;
+}

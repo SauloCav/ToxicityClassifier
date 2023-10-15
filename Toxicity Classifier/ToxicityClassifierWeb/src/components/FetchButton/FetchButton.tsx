@@ -1,6 +1,5 @@
-// FetchButton.tsx
 import React from 'react';
-import './FetchButton.css'; // <- Não esqueça de importar o arquivo de estilos
+import './FetchButton.css';
 
 interface FetchButtonProps {
   onClick: () => void;
@@ -10,7 +9,7 @@ interface FetchButtonProps {
 const FetchButton: React.FC<FetchButtonProps> = ({ onClick, loading }) => {
   return (
     <button 
-      className="fetch-button"  // <- Aplicar a classe aqui
+      className="fetch-button"
       onClick={onClick} 
       disabled={loading}
     >

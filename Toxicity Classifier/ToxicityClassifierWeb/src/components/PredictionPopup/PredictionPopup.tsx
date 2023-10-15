@@ -1,6 +1,5 @@
-// PredictionPopup.tsx
 import React from 'react';
-import './PredictionPopup.css'; // Don't forget to import your CSS file
+import './PredictionPopup.css';
 
 interface PredictionPopupProps {
   show: boolean;

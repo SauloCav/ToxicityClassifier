@@ -1,9 +1,8 @@
-// App.tsx
 import React, { useState } from 'react';
 import './App.css';
-import CommentList from './components/CommentList';
-import URLInput from './components/URLInput';
-import FetchButton from './components/FetchButton';
+import CommentList from './components/CommentList/CommentList';
+import URLInput from './components/URLInput/URLInput';
+import FetchButton from './components/FetchButton/FetchButton';
 import background from './assets/videos/background.mp4'
 
 const App: React.FC = () => {
@@ -28,7 +27,6 @@ const App: React.FC = () => {
         throw new Error(data.error);
       }
 
-      // Assuming each comment is a string. Adjust if your API returns a different structure.
       const texts = data.map((comment: any) => comment.comment); 
 
       const toxicityResponse = await fetch(import.meta.env.VITE_REACT_APP_URL_API_AI, {
@@ -45,10 +43,10 @@ const App: React.FC = () => {
         throw new Error(toxicityData.error);
       }
 
-      setComments(toxicityData.predictions);  // Assuming this returns a list of objects {text, prediction}
+      setComments(toxicityData.predictions);
     } catch (error) {
       console.error("An error occurred", error);
-      // Handle/display error to the user
+
     } finally {
       setLoading(false);
     }

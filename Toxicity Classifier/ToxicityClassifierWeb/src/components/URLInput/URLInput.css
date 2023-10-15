@@ -1,0 +1,16 @@
+.url-input {
+    width: 1000px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .url-input:focus {
+    border-color: #2e9b34; 
+    box-shadow: 0 0 10px #6aee7b;
+    text-align: center;
+  }
+  
