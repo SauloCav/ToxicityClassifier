@@ -3,7 +3,11 @@
     border: 1px solid #dbdbdb;
     padding: 20px;
     border-radius: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #f4f4f4;
   }
   
@@ -11,18 +15,29 @@
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
+    align-items: center;
+    /* Comment.css */
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+    border: 1px solid #5ebe76; /* Bordas finas */
+    padding: 15px; /* Espaçamento interno ao redor do texto */
+    border-radius: 5px; /* Cantos levemente arredondados */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); /* Sombra leve */
+    max-width: 80%; /* Opcional: define uma largura máxima para o contêiner do texto */
+    word-wrap: break-word; /* Garante que o texto não transborde do contêiner */
+    margin-bottom: 10px; /* Espaçamento entre este elemento e outros abaixo dele */
   }
   
   .offensive-indicator {
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 20px;
     color: #333; /* red color for offensive content indicator */
   }
   
   .show-predictions-button {
-    background-color: #000000; /* a blue shade */
+    background-color: #2a4729; /* a blue shade */
     color: #ffffff;
+    border: 1px solid #5ebe76; /* Bordas finas */
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -38,10 +53,12 @@
 
 .yes-text {
     color: #d9534f; /* cor vermelha para 'Sim' */
+    font-weight: 1400;
   }
   
   .no-text {
     color: #28a745; /* cor verde para 'Não' */
+    font-weight: 1400;
   }
   
   
