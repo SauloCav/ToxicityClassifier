@@ -1,7 +1,6 @@
-// Comment.tsx
 import React, { useState } from 'react';
-import './Comment.css'; // <- Certifique-se de importar o arquivo de estilos
-import PredictionPopup from './PredictionPopup';
+import './Comment.css';
+import PredictionPopup from '../PredictionPopup/PredictionPopup';
 
 interface CommentProps {
   text: string;

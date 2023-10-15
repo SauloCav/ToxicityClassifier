@@ -12,7 +12,6 @@ def get_reddit_comments():
         data = request.get_json()
         post_url = data.get('url', None)
 
-        # Initialize PRAW with your credentials
         config = configparser.ConfigParser()
         config.read('config.ini')
         reddit_config = config['REDDIT_CONFIG']
@@ -28,7 +27,6 @@ def get_reddit_comments():
         submission.comments.replace_more(limit=None)
         all_comments = submission.comments.list()
 
-        # Extract the comment body and convert the list to a list of dictionaries
         comments_list = [{"comment": comment.body} for comment in all_comments]
 
         return jsonify(comments_list)
