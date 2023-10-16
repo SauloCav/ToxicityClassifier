@@ -1,4 +1,4 @@
-# Verificar a Desempenho sob alta carga, testando o tempo de resposta do modelo.
+# Verificar a Desempenho sob alta carga, testando o tempo de resposta do modelo
 
 ## ID do Caso de Teste:
 TC002
