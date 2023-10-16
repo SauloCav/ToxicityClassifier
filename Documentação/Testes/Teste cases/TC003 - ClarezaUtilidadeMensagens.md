@@ -1,4 +1,4 @@
-# Verificar a Clareza e Utilidade das Mensagens e Prompts da Interface do Usuário
+# Caso de Teste: Clareza e Utilidade das Mensagens e Prompts da Interface do Usuário
 
 ## ID do Caso de Teste:
 TC003
