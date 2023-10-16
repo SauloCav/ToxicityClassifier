@@ -1,4 +1,4 @@
-# Verificar a Desempenho sob alta carga, testando o tempo de resposta do modelo
+# Caso de Teste: Desempenho sob alta carga, testando o tempo de resposta do modelo
 
 ## ID do Caso de Teste:
 TC002
@@ -31,4 +31,4 @@ O objetivo deste caso de teste é verificar se o sistema tem um bom desempenho s
 **Sucessiva** : O sistema demonstrou um bom desempenho sob alta carga, respondendo às solicitações dentro de um tempo aceitável e classificando os comentários corretamente.
 
 ## Observações:
-N/A
+N/A.
