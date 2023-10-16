@@ -30,5 +30,5 @@ O objetivo deste caso de teste é verificar se o sistema tem um bom desempenho s
 ## Resultado da Execução:
 **Sucessiva** : O sistema demonstrou um bom desempenho sob alta carga, respondendo às solicitações dentro de um tempo aceitável e classificando os comentários corretamente.
 
-## bservações:
+## Observações:
 N/A
