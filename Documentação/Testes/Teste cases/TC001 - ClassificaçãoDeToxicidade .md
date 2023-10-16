@@ -1,10 +1,10 @@
-# Verificar a Classificação de Toxicidade de um Comentário
+# Caso de Teste: Classificação de Toxicidade de um Comentário
 
 ## ID do Caso de Teste:
 TC001
 
 ## Objetivo: 
-Testar se o sistema classifica corretamente a toxicidade dos comentários inseridos.
+O objetivo deste caso de teste é verificar se o sistema classifica corretamente a toxicidade dos comentários inseridos.
 
 ## Pré-condições:
 1. O aplicativo web deve estar acessível através de um navegador web.
@@ -30,4 +30,4 @@ Testar se o sistema classifica corretamente a toxicidade dos comentários inseri
 **Sucessiva**
 
 ## bservações:
-N/A
+N/A.
