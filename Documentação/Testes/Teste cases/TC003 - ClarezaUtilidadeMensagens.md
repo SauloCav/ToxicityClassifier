@@ -31,5 +31,5 @@ Testar se o sistema poaaui Clareza e Utilidade das Mensagens e Prompts da Interf
 ## Resultado da Execução:
 **Sucessiva** : As mensagens e prompts na interface do usuário são claros, informativos e úteis. Eles orientam o usuário de forma eficaz e fornecem informações úteis sobre o uso do sistema.
 
-## bservações:
-N/A
+## Observações:
+N/A.
