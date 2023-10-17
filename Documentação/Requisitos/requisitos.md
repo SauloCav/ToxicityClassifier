@@ -1,10 +1,10 @@
 # Documento de Requisitos
 
 ## Introdução
-Este documento descreve os requisitos do sistema para Classificação de comentários. Ele fornece uma visão geral do produto, termos técnicos específicos, requisitos funcionais e requisitos não funcionais.
+Este documento de requisitos é um guia essencial para o desenvolvimento de um sistema de Classificação de Comentários, uma solução cada vez mais crucial em um mundo conectado, onde as redes sociais desempenham um papel central na comunicação e interação online. Com a proliferação de plataformas de redes sociais, o compartilhamento de informações e opiniões tornou-se mais acessível do que nunca. No entanto, essa liberdade de expressão também trouxe desafios significativos em relação ao conteúdo ofensivo e prejudicial. Ele fornece uma visão geral do produto, termos técnicos específicos, requisitos funcionais e requisitos não funcionais.
 
 ## Visão Geral do Produto
-As redes sociais permitem a interação entre muitas pessoas e influenciadores digitais, nos mais variados temas. Contribuindo em muitos casos para informação sobre doenças, melhor maneira de realizar alguma tarefa, diversão, etc. Existem alguns usuários, que não concordam as ideias e pontos de vista de outros usuários, e realizam comentários ofensivos e preconceituosos contra usuários com ideias diferentes das suas, disseminando ódio e ofendendo. Como existem muitos comentários nas redes sociais, é humanamente muito difícil analisar todos os comentários nas redes sociais. Dessa forma, uma maneira automatizada de classificar e identificar os comentários ofensivos nas redes sociais é importante para aplicação das punições cabíveis, além de encontrar contas falsas empregadas unicamente para comentários ofensivos.
+As redes sociais têm desempenhado um papel fundamental na maneira como as pessoas se comunicam, compartilham informações e interagem online. Essa ampla plataforma de comunicação trouxe muitos benefícios, como acesso à informação, conexões sociais e entretenimento. No entanto, também apresentou desafios significativos relacionados à moderação de conteúdo e ao combate à disseminação de discurso de ódio, linguagem ofensiva e comentários prejudiciais. O aumento de comentários ofensivos nas redes sociais tornou-se um problema sério. Usuários que discordam das opiniões de outros frequentemente deixam comentários carregados de hostilidade e preconceito, criando um ambiente tóxico que prejudica a experiência online de muitos. A moderação manual de todos esses comentários é humanamente impossível devido à enorme quantidade de conteúdo gerado diariamente. Nesse contexto, a necessidade de uma solução automatizada para classificar e identificar comentários ofensivos tornou-se evidente. A classificação eficaz dos comentários ofensivos não apenas permite a aplicação de ações corretivas e punições apropriadas, mas também desempenha um papel fundamental na identificação de contas falsas que são usadas exclusivamente para disseminar conteúdo prejudicial.
 
 A equipe envolvida no projeto praticará o desenvolvimento de interface com boa usabilidade e prototipação de software. A fim de organizar o desenvolvimento é importante antes definir os requisitos, arquitetura e como testar o software. Portanto, a criação de documentação adequada que aborde tais aspectos contribuirão na implementação. O treinamento da Inteligência Artificial (IA) para classificação dos comentários em redes sociais, empregará vários conceitos observados na disciplina de IA.
 
@@ -52,7 +52,6 @@ O sistema deve permitir a atualização periódica do modelo de IA para melhorar
 #### Integração com Políticas da Plataforma:
 O sistema deve respeitar e seguir as políticas específicas de cada plataforma de redes sociais em que é implantado.
 
-
 ### Requisitos não funcionais:
 
 #### Desempenho:
@@ -78,3 +77,21 @@ Cumprir com as regulamentações locais e internacionais relacionadas à modera�
 
 #### Tempo de Resposta:
 Garantir que as notificações de comentários ofensivos sejam entregues aos moderadores em tempo hábil.
+
+#### Escalabilidade:
+O sistema deve ser escalável para acomodar aumentos na carga de trabalho e no volume de dados, garantindo que o desempenho permaneça consistente.
+
+#### Disponibilidade:
+O sistema deve estar disponível de forma confiável, minimizando o tempo de inatividade não planejado.
+
+#### Adaptabilidade a Idiomas:
+A IA deve ser capaz de compreender e classificar comentários em vários idiomas, se aplicável.
+
+#### Tolerância a Falhas:
+O sistema deve ser capaz de lidar com falhas de componentes individuais de forma a não afetar a funcionalidade global do sistema.
+
+#### Consumo de Recursos:
+O sistema deve ser eficiente em termos de consumo de recursos, como CPU e memória, para garantir um desempenho eficaz em infraestruturas variadas.
+
+#### Aceitação de Carga Variável:
+O sistema deve ser capaz de lidar com picos de carga, como eventos de alta atividade ou aumento no tráfego de comentários.
