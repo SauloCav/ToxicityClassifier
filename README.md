@@ -43,3 +43,5 @@ Este produto é uma solução de software projetada para melhorar a moderação 
 ### [Modelo arquitetural](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documentos/Modelo%20Arquitetural/modeloArquitetural.md)
 
 ### [Plano de testes](https://github.com/SauloCav/Projeto-Integrador-IV/blob/main/Documenta%C3%A7%C3%A3o/Testes/PlanoDeTestes.md)
+
+### [Teste cases](https://github.com/SauloCav/Projeto-Integrador-IV/tree/main/Documenta%C3%A7%C3%A3o/Testes/Teste%20cases)
