@@ -1,5 +1,7 @@
 # Projeto Integrador IV - Classificador de Toxicidade
 
+As redes sociais permitem a interação entre muitas pessoas e influenciadores digitais, nos mais variados temas. Contribuindo em muitos casos para informação sobre doenças, melhor maneira de realizar alguma tarefa, diversão, etc. Existem alguns usuários, que não concordam as ideias e pontos de vista de outros usuários, e realizam comentários ofensivos e preconceituosos contra usuários com ideias diferentes das suas, disseminando ódio e ofendendo. Como existem muitos comentários nas redes sociais, é humanamente muito difícil analisar todos os comentários nas redes sociais. Dessa forma, uma maneira automatizada de classificar e identificar os comentários ofensivos nas redes sociais é importante para aplicação das punições cabíveis, além de encontrar contas falsas empregadas unicamente para comentários ofensivos.
+
 Este produto é uma solução de software projetada para melhorar a moderação de conteúdo em redes sociais. À medida que as redes sociais se tornam um espaço importante para interação e compartilhamento de informações, também surgem desafios relacionados a comentários ofensivos e prejudiciais. O objetivo deste software é utilizar a inteligência artificial (IA) para identificar automaticamente esses comentários problemáticos e classificá-los com base em sua gravidade.
 
 ### Instalação
@@ -15,6 +17,7 @@ Este produto é uma solução de software projetada para melhorar a moderação 
    ```sh
    pip install -r requirements.txt
    ```
+
 ## Documentação básica e descrição do projeto:
 
 ### [Descrição da Temática](https://github.com/SauloCav/Projeto-Integrador-IV/blob/37d6c39072739710799db701d9d541b52e6e3dd2/Documentos/Classificador%20de%20coment%C3%A1rios%20docs/tematica.md)
