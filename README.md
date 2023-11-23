@@ -1,4 +1,4 @@
-# Projeto Integrador IV - Classificador de Toxicidade
+# Classificador de Toxicidade
 
 As redes sociais permitem a interação entre muitas pessoas e influenciadores digitais, nos mais variados temas. Contribuindo em muitos casos para informação sobre doenças, melhor maneira de realizar alguma tarefa, diversão, etc. Existem alguns usuários, que não concordam as ideias e pontos de vista de outros usuários, e realizam comentários ofensivos e preconceituosos contra usuários com ideias diferentes das suas, disseminando ódio e ofendendo. Como existem muitos comentários nas redes sociais, é humanamente muito difícil analisar todos os comentários nas redes sociais. Dessa forma, uma maneira automatizada de classificar e identificar os comentários ofensivos nas redes sociais é importante para aplicação das punições cabíveis, além de encontrar contas falsas empregadas unicamente para comentários ofensivos.
 
